@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Manrope&display=swap');
+
+*{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 238, 255)
+} */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 238, 255);
+}
+
+header{
+    width: 100%;
+}
+
+a, .logo-btn div{
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(156, 156, 156, 0.761);
+    z-index: 10;
+    background-color: rgb(233, 238, 255)
+}
+
+.logo{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo a{
+    color: rgb(146, 167, 236);
+}
+
+.menu, .logo-btn{
+    padding-right: 25px;
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem;
+    font-size: 15px;
+}
+
+.menu{
+    margin-left: 20%;
+}
+
+.menu a:hover, .logo-btn a:hover, .logo-btn div:hover{
+    color: rgb(146, 167, 236);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.active{
+    color: rgb(146, 167, 236);
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+#login-btn{
+    cursor: pointer;
+}
+
+.login-form{
+    position: absolute;
+    top: 120%;
+    right: 2rem;
+    width: 18rem;
+    padding: 20px;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1.2rem;
+    display: none;
+    background-color: rgba(225, 231, 249, 0.917);
+    z-index: 1000;
+} 
+
+h3{
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+
+.box{
+    width: 100%;
+    border-bottom: .1rem solid black;
+    border-width: .1rem;
+    padding: .5rem 0;
+    font-size: .8rem;
+    text-transform: none;
+    margin: .4rem 0;
+    outline: none;
+    background: none;
+}
+
+.box:focus{
+    border-bottom: .1rem solid rgba(146, 167, 236, 0.497)
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: .5rem 0;
+}
+
+.remember label{
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+
+.remember input{
+    accent-color:  rgb(146, 167, 236)
+}
+
+.btn{
+    align-self: center;
+    width: 100%;
+    margin: .5rem 0;
+    border-radius: 1.3rem;
+    padding: .2rem 0;
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.409);
+}
+
+.btn:hover{
+    background-color: rgba(146, 167, 236, 0.497);
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .3rem;
+    font-size: .7rem;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    color: rgb(146, 167, 236);
+}
+
+/*//////////////////////////////////////////////////////////////*/
+
+.home{
+    width: 100%;
+    position: relative;
+}
+
+.banner{
+    margin-top: 80px;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    padding: 0 10px;
+}
+
+.banner-img{
+    width: 100%;
+    height: 100%;
+    position: relative;  
+}
+
+.banner-img .text-bg{
+    margin: 0 10px;
+    background-color: #abbbef7f;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.banner span{
+    position: absolute;
+    font-size: 30px;
+    bottom: 80px; left: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.learn-more{
+    width: auto;
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+    color: white;
+    background: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 80%; right: 10%;
+    font-size: 15px;
+}
+
+.learn-more:hover{
+    color: black;
+}
+
+/*////////////////////////////////////////////////////*/
+
+
+.services, .food, .accessories{
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    box-shadow: 0 0px 3px rgb(255, 255, 255);
+    background-color: rgba(185, 201, 255, 0.272);
+    position: relative;
+    overflow: hidden;
+
+}
+.services:hover, .food:hover, .accessories:hover{
+    background-color: rgba(146, 167, 236, 0.465);
+}
+
+.services ul, .food ul, .accessories ul{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.services ul{
+    justify-content: center;
+}
+
+.services li{
+    border-radius: 10px;
+    width: 180px;
+    padding: 0;
+    height: 130px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.46);
+    position: relative;
+    padding-top: 10px;
+}
+
+.food li, .accessories li{
+    border-radius: 10px;
+    max-width: 150px;
+    padding: 0;
+    height:250px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.46);
+    position: relative;
+
+}
+
+
+.services li:hover, .food li:hover, .accessories li:hover{
+    background-color: rgba(255, 255, 255, 0.692);
+    box-shadow: 0 0px 5px rgb(146, 167, 236);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.213);
+}
+
+.service-icon{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.mini-img{
+    border-radius: 10px 10px 0 0 ;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.box-title{
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.box-description, .service-name{
+    font-size: 14px;
+    margin-bottom: 10px ;
+    text-align: center;
+}
+
+.action-btn{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 5px;
+
+    &:hover{
+        text-decoration: underline;
+    }
+
+    &:active{
+        color: #abbbef7f;
+        text-decoration: underline;
+    }
+}
+
+.view-all{
+    position: absolute;
+    right: 10px;bottom: 2px;
+    font-size: 13px;
+    margin: 10px 20px 10px 0;
+    text-decoration: underline;
+    color: rgb(53, 10, 113);
+}
+
+.view-all:hover{
+    color: rgb(204, 95, 255);
+}
+
+/*/////////////////////////////////////////////////////////////////////*/
+
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgba(186, 193, 217, 0.516);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer-text{
+    font-size: small;
+    color: rgb(113, 118, 135);
+}
+
+/*//////////////////////////////RESPONSIVE//////////////////////////////////////*/
+
+
+@media only screen and (max-width: 991px){
+
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .swiper-container, .swiper-wrapper, .swiper-pagination, .swiper-button-next, .swiper-button-prev{
+        display: block
+    }
+
+
+    .banner{
+        margin-top: 80px;
+        height: 30vh;
+        width: 100%;
+        position: relative;
+    }
+    
+    .banner-img .text-bg{
+        margin: 0 10px;
+        background-color: rgba(171, 187, 239, 0.498);
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+    
+    .banner span{
+        position: absolute;
+        font-size: 25px;
+        bottom: 40px; left: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .learn-more{
+        width: auto;
+        box-shadow: 0 0 2px rgb(255, 255, 255);
+        color: white;
+        background: none;
+        border-radius: 10px;
+        padding: 5px 15px;
+        cursor: pointer;
+        position: absolute;
+        top: 80%; right: 10%;
+        font-size: 12px;
+    }
+    
+    
+/*/////////////////////////////////////////////////////////*/
+    
+    
+    .services ul, .food ul, .accessories ul{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+    
+    .services li{
+        width: 100%;
+        height: 130px;
+    }
+
+    
+    .food li, .accessories li{
+        border-radius: 10px;
+        width: 100%;
+        height:auto;
+        flex-direction: row;
+    
+    }
+    
+    .mini-img{
+        border-radius: 10px 0 0 10px ;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+    
+    .box-title{
+        margin: 0 15px;
+        font-size: 15px;
+    }
+    
+    .box-description, .service-name{
+        font-size: 13px;
+        margin: 0 10px;
+        text-align: left;
+    }
+    
+    .services .action-btn{
+        position: absolute;
+        bottom: 5px;
+    }
+
+    .food .action-btn, .accessories .action-btn{
+        position: absolute;
+        right: 5px;
+    }
+    
+         
+/*//////////////////////////Nav Bar//////////////////////////////*/
+
+.menu{
+    display: none;
+}
+
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(233, 238, 255);
+    width: 100%;
+    padding-left: 20px;
+    margin-right: 0;
+    z-index: 1000;
+}
+
+.menu a{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#menu-btn {
+    display: block;
+    cursor: pointer;
+}
+
+.fas.fa-times {
+    display: none;
+    } 
+    
+.fa-bars.active{
+        display: none;
+    }
+
+.fa-times.active {
+    display: block;
+}
+
+.logo {
+padding-left: 20px;
+font-weight: bold;
+font-size: 20px;
+margin-left: 0;
+}
+
+.logo-btn {
+padding-right: 10px;
+display: flex;
+gap: 1rem;
+margin: 0;
+font-size: 15px;
+}
+
+.menu-btn {
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.logo-btn .fas {
+font-size: 18px;
+margin-right: 10px;
+}
+
+}

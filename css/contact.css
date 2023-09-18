@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Manrope&display=swap');
+
+*{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 238, 255);
+}
+
+header{
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(156, 156, 156, 0.761);
+    z-index: 10;
+    background-color: rgb(233, 238, 255)
+}
+
+a, .logo-btn div{
+    text-decoration: none;
+    color: rgb(34, 33, 33);
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo a{
+    color: rgb(146, 167, 236);
+}
+
+.menu, .logo-btn{
+    padding-right: 25px;
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem;
+    font-size: 15px;
+}
+
+.menu{
+    margin-left: 20%;
+}
+
+.menu a:hover, .logo-btn a:hover, .logo-btn div:hover{
+    color: rgb(146, 167, 236);
+}
+
+#menu-btn{
+    display: none;
+}
+/*////////////////////////////////////////////////////////////////////*/
+
+#login-btn{
+    cursor: pointer;
+}
+
+.login-form{
+    position: absolute;
+    top: 120%;
+    right: 2rem;
+    width: 18rem;
+    padding: 20px;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1.2rem;
+    display: none;
+    background-color: rgba(225, 231, 249, 0.917);
+    z-index: 1000;
+} 
+
+h3{
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+
+.box{
+    width: 100%;
+    border-bottom: .1rem solid black;
+    border-width: .1rem;
+    padding: .5rem 0;
+    font-size: .8rem;
+    text-transform: none;
+    margin: .4rem 0;
+    outline: none;
+    background: none;
+}
+
+.box:focus{
+    border-bottom: .1rem solid rgba(146, 167, 236, 0.497)
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    padding: .5rem 0;
+}
+
+.remember label{
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+
+.remember input{
+    accent-color:  rgb(146, 167, 236)
+}
+
+.btn{
+    align-self: center;
+    width: 100%;
+    margin: .5rem 0;
+    border-radius: 1.3rem;
+    padding: .2rem 0;
+    cursor: pointer;
+    background: none;
+    font-size: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.409);
+}
+
+.btn:hover{
+    background-color: rgba(146, 167, 236, 0.497);
+    color: white;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .3rem;
+    font-size: .7rem;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    color: rgb(146, 167, 236);
+}
+
+.active{
+    color: rgb(146, 167, 236);
+}
+
+.main-body{
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*/////////////////////////////////////////////////////////////////////*/
+
+.footer{
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgba(186, 193, 217, 0.516);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.footer-text{
+    font-size: small;
+    color: rgb(113, 118, 135);
+}
+
+/*//////////////////////////////////////////////////////////////*/
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img{
+    background-color: rgb(198, 206, 238);
+    position: relative;
+}
+
+.img h1{
+    text-align: center;
+    color:rgb(233, 233, 254);
+    font-size: 45px;
+    position: absolute;
+    background-color: rgba(146, 167, 236, 0.488);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: larger;
+    margin: 10px;
+}
+
+/*/////////////////////////////////////////*/
+
+.contact-form{
+    background-color: rgba(250, 251, 255, 0.602);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 70%;
+    margin: 20px;
+}
+
+.contact-form input, textarea{
+    align-self: center;
+    margin: 10px 0;
+    width: 90%;
+    border: 0;
+    padding-left: 7px;
+    outline: none;
+}
+
+
+.contact-form input{
+    border-bottom: 1px solid black;
+    background: none;
+    margin-bottom: 20px;
+    height: 30px;
+
+    &:focus{
+        border-bottom: .1rem solid rgba(146, 167, 236, 0.497)
+    }
+}
+
+
+textarea{
+    margin-top: 20px;
+}
+
+.submit{
+    text-align: center;
+}
+
+#submit{
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(222, 229, 255);
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+#submit:hover{
+    background-color: rgb(229, 234, 255);
+}
+
+#submit:active{
+    box-shadow: 0 0 3px rgba(232, 232, 232, 0.603);
+    background-color: rgb(198, 206, 238);
+}
+/*//////////////////////////////RESPONSIVE//////////////////////////////////////*/
+
+
+@media only screen and (max-width: 991px){
+
+    html{
+        font-size: 67%;
+    }
+/* 
+    header{
+        padding: 1rem;
+    } */
+}
+
+@media only screen and (max-width: 640px) {
+
+    .img{
+        height: 200px;
+    }
+    
+    .img h1{
+        text-align: center;
+        color: #e5ebff;
+        font-size: 35px;
+        position: absolute;
+        background-color: rgba(146, 167, 236, 0.488);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+          
+/*//////////////////////////Nav Bar//////////////////////////////*/
+
+.menu{
+    display: none;
+}
+
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(233, 238, 255);
+    width: 100%;
+    padding-left: 20px;
+    margin-right: 0;
+    z-index: 1000;
+}
+
+.menu a{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#menu-btn {
+    display: block;
+    cursor: pointer;
+}
+
+.fas.fa-times {
+    display: none;
+    } 
+    
+.fa-bars.active{
+        display: none;
+    }
+
+.fa-times.active {
+    display: block;
+}
+
+.logo {
+padding-left: 20px;
+font-weight: bold;
+font-size: 20px;
+margin-left: 0;
+}
+
+.logo-btn {
+padding-right: 10px;
+display: flex;
+gap: 1rem;
+margin: 0;
+font-size: 15px;
+}
+
+.menu-btn {
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.logo-btn .fas {
+font-size: 18px;
+margin-right: 10px;
+}
+
+}
+
