@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Manrope&display=swap');
 
-*{
+* {
     font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,16 +26,17 @@ body {
     background-color: rgb(233, 238, 255);
 }
 
-header{
+header {
     width: 100%;
 }
 
-a, .logo-btn div{
+a,
+.logo-btn div {
     text-decoration: none;
     color: rgb(34, 33, 33);
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 60px;
     position: fixed;
@@ -48,17 +49,18 @@ a, .logo-btn div{
     background-color: rgb(233, 238, 255)
 }
 
-.logo{
+.logo {
     padding-left: 20px;
     font-weight: bold;
     font-size: 20px;
 }
 
-.logo a{
+.logo a {
     color: rgb(146, 167, 236);
 }
 
-.menu, .logo-btn{
+.menu,
+.logo-btn {
     padding-right: 25px;
     display: flex;
     gap: 1rem;
@@ -66,128 +68,130 @@ a, .logo-btn div{
     font-size: 15px;
 }
 
-.menu{
+.menu {
     margin-left: 20%;
 }
 
-.menu a:hover, .logo-btn a:hover, .logo-btn div:hover{
+.menu a:hover,
+.logo-btn a:hover,
+.logo-btn div:hover {
     color: rgb(146, 167, 236);
 }
 
-#menu-btn{
+#menu-btn {
     display: none;
 }
 
-.active{
+.active {
     color: rgb(146, 167, 236);
 }
 
 /*////////////////////////////////////////////////////////////////////*/
 
-#login-btn{
+#login-btn {
     cursor: pointer;
 }
 
-.login-form{
+.login-form {
     position: absolute;
     top: 120%;
-    right: 2rem;
-    width: 18rem;
+    right: 15px;
+    width: 250px;
     padding: 20px;
-    font-size: .8rem;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-radius: 1.2rem;
+    border-radius: 15px;
     display: none;
     background-color: rgba(225, 231, 249, 0.917);
     z-index: 1000;
-} 
-
-h3{
-    font-size: 1.2rem;
-    padding-bottom: .5rem;
 }
 
-.box{
+h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.box {
     width: 100%;
-    border-bottom: .1rem solid black;
-    border-width: .1rem;
-    padding: .5rem 0;
-    font-size: .8rem;
+    border-bottom: 5px solid black;
+    border-width: 1px;
+    padding: 5px 0;
+    font-size: 12px;
     text-transform: none;
-    margin: .4rem 0;
+    margin: 9px 0;
     outline: none;
     background: none;
 }
 
-.box:focus{
-    border-bottom: .1rem solid rgba(146, 167, 236, 0.497)
+.box:focus {
+    border-bottom: .1rem solid rgba(146, 167, 236, 0.748)
 }
 
-.remember{
+.remember {
     display: flex;
     align-items: center;
-    gap: .2rem;
-    padding: .5rem 0;
+    gap: 2px;
+    padding: 10px 0;
 }
 
-.remember label{
-    font-size: .8rem;
+.remember label {
+    font-size: 10px;
     cursor: pointer;
 }
 
 
-.remember input{
-    accent-color:  rgb(146, 167, 236)
+.remember input {
+    accent-color: rgb(146, 167, 236)
 }
 
-.btn{
+.btn {
     align-self: center;
     width: 100%;
-    margin: .5rem 0;
-    border-radius: 1.3rem;
-    padding: .2rem 0;
+    margin: 8px 0;
+    border-radius: 20px;
+    padding: 2px 0;
     cursor: pointer;
     background: none;
-    font-size: 1rem;
+    font-size: 12px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.409);
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgba(146, 167, 236, 0.497);
     color: white;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: .3rem;
-    font-size: .7rem;
+    margin-top: 5px;
+    font-size: 9px;
 }
 
-.links a:hover{
+.links a:hover {
     text-decoration: underline;
     color: rgb(146, 167, 236);
 }
 
 /*//////////////////////////////////////////////////////////////*/
 
-.home{
+.home {
     width: 100%;
     position: relative;
 }
 
-.banner{
+.banner {
     margin-top: 80px;
     height: 50vh;
     width: 100%;
     position: relative;
 }
 
-.banner img{
+.banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -195,28 +199,32 @@ h3{
     padding: 0 10px;
 }
 
-.banner-img{
+.banner-img {
     width: 100%;
     height: 100%;
-    position: relative;  
+    position: relative;
 }
 
-.banner-img .text-bg{
+.banner-img .text-bg {
     margin: 0 10px;
     background-color: #abbbef7f;
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.banner span{
+.banner span {
     position: absolute;
     font-size: 30px;
-    bottom: 80px; left: 50px;
+    bottom: 80px;
+    left: 50px;
     font-weight: bold;
     color: white;
 }
 
-.learn-more{
+.learn-more {
     width: auto;
     box-shadow: 0 0 2px rgb(255, 255, 255);
     color: white;
@@ -225,44 +233,51 @@ h3{
     padding: 5px 15px;
     cursor: pointer;
     position: absolute;
-    top: 80%; right: 10%;
+    top: 80%;
+    right: 10%;
     font-size: 15px;
 }
 
-.learn-more:hover{
+.learn-more:hover {
     color: black;
 }
 
 /*////////////////////////////////////////////////////*/
 
 
-.services, .food, .accessories{
+.services,
+.food,
+.accessories {
     margin: 20px 10px;
     padding: 20px 10px;
     border-radius: 8px;
     box-shadow: 0 0px 3px rgb(255, 255, 255);
     background-color: rgba(185, 201, 255, 0.272);
     position: relative;
-    overflow: hidden;
-
 }
-.services:hover, .food:hover, .accessories:hover{
+
+
+.services:hover,
+.food:hover,
+.accessories:hover {
     background-color: rgba(146, 167, 236, 0.465);
 }
 
-.services ul, .food ul, .accessories ul{
+.services ul,
+.food ul,
+.accessories ul {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
-.services ul{
+.services ul {
     justify-content: center;
 }
 
-.services li{
+.services li {
     border-radius: 10px;
     width: 180px;
     padding: 0;
@@ -278,11 +293,12 @@ h3{
     padding-top: 10px;
 }
 
-.food li, .accessories li{
+.food li,
+.accessories li {
     border-radius: 10px;
-    max-width: 150px;
+    width: 150px;
     padding: 0;
-    height:250px;
+    height: 250px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -295,39 +311,42 @@ h3{
 }
 
 
-.services li:hover, .food li:hover, .accessories li:hover{
+.services li:hover,
+.food li:hover,
+.accessories li:hover {
     background-color: rgba(255, 255, 255, 0.692);
     box-shadow: 0 0px 5px rgb(146, 167, 236);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.213);
 }
 
-.service-icon{
+.service-icon {
     margin: 10px;
     width: 30px;
     height: 30px;
 
 }
 
-.mini-img{
-    border-radius: 10px 10px 0 0 ;
+.mini-img {
+    border-radius: 10px 10px 0 0;
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin-bottom: 15px;
 }
 
-.box-title{
+.box-title {
     margin: 0 15px;
     font-size: 15px;
 }
 
-.box-description, .service-name{
+.box-description,
+.service-name {
     font-size: 14px;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.action-btn{
+.action-btn {
     display: inline-block;
     padding: 5px 10px;
     font-size: 12px;
@@ -336,26 +355,28 @@ h3{
     position: absolute;
     bottom: 5px;
 
-    &:hover{
+    &:hover {
         text-decoration: underline;
     }
 
-    &:active{
+    &:active {
         color: #abbbef7f;
         text-decoration: underline;
     }
 }
 
-.view-all{
+.view-all {
     position: absolute;
-    right: 10px;bottom: 2px;
+    right: 10px;
+    bottom: 2px;
     font-size: 13px;
     margin: 10px 20px 10px 0;
     text-decoration: underline;
     color: rgb(53, 10, 113);
 }
 
-.view-all:hover{
+
+.view-all:hover {
     color: rgb(204, 95, 255);
 }
 
@@ -373,7 +394,7 @@ h3{
     padding: 20px 0;
 }
 
-.footer-text{
+.footer-text {
     font-size: small;
     color: rgb(113, 118, 135);
 }
@@ -381,43 +402,65 @@ h3{
 /*//////////////////////////////RESPONSIVE//////////////////////////////////////*/
 
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
 
-    html{
+    html {
         font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+
+    li[class="img-5"] {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 727px) {
+
+    li[class="img-4"] {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 640px) {
 
-    .swiper-container, .swiper-wrapper, .swiper-pagination, .swiper-button-next, .swiper-button-prev{
+    .swiper-container,
+    .swiper-wrapper,
+    .swiper-pagination,
+    .swiper-button-next,
+    .swiper-button-prev {
         display: block
     }
 
 
-    .banner{
+    .banner {
         margin-top: 80px;
         height: 30vh;
         width: 100%;
         position: relative;
     }
-    
-    .banner-img .text-bg{
+
+    .banner-img .text-bg {
         margin: 0 10px;
         background-color: rgba(171, 187, 239, 0.498);
         position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
-    
-    .banner span{
+
+    .banner span {
         position: absolute;
         font-size: 25px;
-        bottom: 40px; left: 20px;
+        bottom: 40px;
+        left: 20px;
         font-weight: bold;
         color: white;
     }
-    
-    .learn-more{
+
+    .learn-more {
         width: auto;
         box-shadow: 0 0 2px rgb(255, 255, 255);
         color: white;
@@ -426,15 +469,18 @@ h3{
         padding: 5px 15px;
         cursor: pointer;
         position: absolute;
-        top: 80%; right: 10%;
+        top: 80%;
+        right: 10%;
         font-size: 12px;
     }
-    
-    
-/*/////////////////////////////////////////////////////////*/
-    
-    
-    .services ul, .food ul, .accessories ul{
+
+
+    /*/////////////////////////////////////////////////////////*/
+
+
+    .services ul,
+    .food ul,
+    .accessories ul {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
@@ -442,118 +488,121 @@ h3{
         justify-content: space-evenly;
         margin-bottom: 10px;
     }
-    
-    .services li{
+
+    .services li {
         width: 100%;
         height: 130px;
     }
 
-    
-    .food li, .accessories li{
+
+    .food li,
+    .accessories li {
         border-radius: 10px;
         width: 100%;
-        height:auto;
+        height: auto;
         flex-direction: row;
-    
+
     }
-    
-    .mini-img{
-        border-radius: 10px 0 0 10px ;
+
+    .mini-img {
+        border-radius: 10px 0 0 10px;
         width: 100px;
         height: 100px;
         margin-bottom: 0;
     }
-    
-    .box-title{
+
+    .box-title {
         margin: 0 15px;
         font-size: 15px;
     }
-    
-    .box-description, .service-name{
+
+    .box-description,
+    .service-name {
         font-size: 13px;
         margin: 0 10px;
         text-align: left;
     }
-    
-    .services .action-btn{
+
+    .services .action-btn {
         position: absolute;
         bottom: 5px;
     }
 
-    .food .action-btn, .accessories .action-btn{
+    .food .action-btn,
+    .accessories .action-btn {
         position: absolute;
         right: 5px;
     }
-    
-         
-/*//////////////////////////Nav Bar//////////////////////////////*/
-
-.menu{
-    display: none;
-}
 
 
-.menu.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: rgb(233, 238, 255);
-    width: 100%;
-    padding-left: 20px;
-    margin-right: 0;
-    z-index: 1000;
-}
+    /*//////////////////////////Nav Bar//////////////////////////////*/
 
-.menu a{
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#menu-btn {
-    display: block;
-    cursor: pointer;
-}
-
-.fas.fa-times {
-    display: none;
-    } 
-    
-.fa-bars.active{
+    .menu {
         display: none;
     }
 
-.fa-times.active {
-    display: block;
-}
 
-.logo {
-padding-left: 20px;
-font-weight: bold;
-font-size: 20px;
-margin-left: 0;
-}
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(233, 238, 255);
+        width: 100%;
+        padding-left: 20px;
+        margin-right: 0;
+        z-index: 1000;
+    }
 
-.logo-btn {
-padding-right: 10px;
-display: flex;
-gap: 1rem;
-margin: 0;
-font-size: 15px;
-}
+    .menu a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
 
-.menu-btn {
-display: flex;
-align-items: center;
-cursor: pointer;
-}
+    #menu-btn {
+        display: block;
+        cursor: pointer;
+    }
 
-.logo-btn .fas {
-font-size: 18px;
-margin-right: 10px;
-}
+    .fas.fa-times {
+        display: none;
+    }
+
+    .fa-bars.active {
+        display: none;
+    }
+
+    .fa-times.active {
+        display: block;
+    }
+
+    .logo {
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .logo-btn {
+        padding-right: 10px;
+        display: flex;
+        gap: 1rem;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .logo-btn .fas {
+        font-size: 18px;
+        margin-right: 10px;
+    }
 
 }

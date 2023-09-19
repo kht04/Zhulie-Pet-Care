@@ -9,6 +9,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
 /* 
 body{
     height: 100vh;
@@ -29,7 +30,8 @@ body {
 /* The rest of your CSS code remains unchanged */
 
 .footer {
-  margin-top: auto; /* This pushes the footer to the bottom */
+  margin-top: auto;
+  /* This pushes the footer to the bottom */
   width: 100%;
   height: auto;
   background-color: rgba(186, 193, 217, 0.516);
@@ -94,6 +96,7 @@ a,
 #menu-btn {
   display: none;
 }
+
 /*////////////////////////////////////////////////////////////////////*/
 
 #login-btn {
@@ -103,66 +106,67 @@ a,
 .login-form {
   position: absolute;
   top: 120%;
-  right: 2rem;
-  width: 18rem;
+  right: 15px;
+  width: 250px;
   padding: 20px;
-  font-size: 0.8rem;
+  font-size: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border-radius: 1.2rem;
+  border-radius: 15px;
   display: none;
   background-color: rgba(225, 231, 249, 0.917);
   z-index: 1000;
 }
 
 h3 {
-  font-size: 1.2rem;
-  padding-bottom: 0.5rem;
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 .box {
   width: 100%;
-  border-bottom: 0.1rem solid black;
-  border-width: 0.1rem;
-  padding: 0.5rem 0;
-  font-size: 0.8rem;
+  border-bottom: 5px solid black;
+  border-width: 1px;
+  padding: 5px 0;
+  font-size: 12px;
   text-transform: none;
-  margin: 0.4rem 0;
+  margin: 9px 0;
   outline: none;
   background: none;
 }
 
 .box:focus {
-  border-bottom: 0.1rem solid rgba(146, 167, 236, 0.497);
+  border-bottom: .1rem solid rgba(146, 167, 236, 0.748)
 }
 
 .remember {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
-  padding: 0.5rem 0;
+  gap: 2px;
+  padding: 10px 0;
 }
 
 .remember label {
-  font-size: 0.8rem;
+  font-size: 10px;
   cursor: pointer;
 }
 
+
 .remember input {
-  accent-color: rgb(146, 167, 236);
+  accent-color: rgb(146, 167, 236)
 }
 
 .btn {
   align-self: center;
   width: 100%;
-  margin: 0.5rem 0;
-  border-radius: 1.3rem;
-  padding: 0.2rem 0;
+  margin: 8px 0;
+  border-radius: 20px;
+  padding: 2px 0;
   cursor: pointer;
   background: none;
-  font-size: 1rem;
+  font-size: 12px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.409);
 }
 
@@ -175,8 +179,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.3rem;
-  font-size: 0.7rem;
+  margin-top: 5px;
+  font-size: 9px;
 }
 
 .links a:hover {
@@ -187,6 +191,7 @@ h3 {
 .active {
   color: rgb(146, 167, 236);
 }
+
 /*///////////////////////////////////////////////////////*/
 
 /* .footer{
@@ -214,6 +219,7 @@ h3 {
   font-size: small;
   color: rgb(113, 118, 135);
 }
+
 /*/////////////////////////////////////////////////////////////////////*/
 
 .main h1 {
@@ -276,6 +282,7 @@ img {
   top: 20px;
   left: 20px;
 }
+
 .our-story {
   padding: 20px;
   background-color: #92a7ec39;
