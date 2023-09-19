@@ -424,15 +424,10 @@ h3 {
 }
 
 @media only screen and (max-width: 640px) {
-
-    .swiper-container,
-    .swiper-wrapper,
-    .swiper-pagination,
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: block
+    
+    li[class="img-5"],li[class="img-4"]  {
+        display: flex;
     }
-
 
     .banner {
         margin-top: 80px;
@@ -605,4 +600,21 @@ h3 {
         margin-right: 10px;
     }
 
+    /*//////////////////////////log in form/////////////////////////////*/
+
+    .login-form {
+        position: absolute;
+        top: 100%; right: 0;
+        width: 100%;
+        padding: 20px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+        display: none;
+        background-color: rgb(225, 231, 249);
+        z-index: 1000;
+    }
 }
