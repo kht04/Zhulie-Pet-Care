@@ -404,7 +404,8 @@ li {
 
     .login-form {
         position: absolute;
-        top: 100%; right: 0;
+        top: 100%;
+        right: 0;
         width: 100%;
         padding: 20px;
         font-size: 15px;
